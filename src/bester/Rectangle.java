@@ -12,4 +12,9 @@ public class Rectangle {
     public double area() {
         return length * breadth;
     }
+
+    public boolean areaGreaterThan(Rectangle rectangle) {
+        if (this.area() > rectangle.area()) return true;
+        else return false;
+    }
 }
