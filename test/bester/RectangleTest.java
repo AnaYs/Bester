@@ -15,7 +15,7 @@ public class RectangleTest {
 
     @Test
     public void shouldDetermineIfAreaIsGreaterThanOtherRectangle() {
-        assertTrue(new Rectangle(2, 2).areaGreaterThan(new Rectangle(1, 1)));
+        assertTrue(new Rectangle(2, 2).betterThan(new Rectangle(1, 1)));
     }
 
 }

@@ -13,8 +13,7 @@ public class Rectangle {
         return length * breadth;
     }
 
-    public boolean areaGreaterThan(Rectangle rectangle) {
-        if (this.area() > rectangle.area()) return true;
-        else return false;
+    public boolean betterThan(Rectangle rectangle) {
+        return area() > rectangle.area();
     }
 }
