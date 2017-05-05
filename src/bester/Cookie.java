@@ -1,6 +1,6 @@
 package bester;
 
-public class Cookie {
+public class Cookie implements Bester {
 
     private int numberOfChocolateChips;
 
@@ -8,4 +8,7 @@ public class Cookie {
         this.numberOfChocolateChips = numberOfChocolateChips;
     }
 
+    public boolean betterThan(Bester otherCookie) {
+        return numberOfChocolateChips > ((Cookie) otherCookie).numberOfChocolateChips;
+    }
 }

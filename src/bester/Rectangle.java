@@ -1,6 +1,6 @@
 package bester;
 
-public class Rectangle {
+public class Rectangle implements Bester {
     private double length;
     private double breadth;
 
@@ -13,7 +13,7 @@ public class Rectangle {
         return length * breadth;
     }
 
-    public boolean betterThan(Rectangle rectangle) {
-        return area() > rectangle.area();
+    public boolean betterThan(Bester rectangle) {
+        return area() > ((Rectangle) rectangle).area();
     }
 }
